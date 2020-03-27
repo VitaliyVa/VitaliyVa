@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="static/css/style.css?v-2">
-    <!-- <link rel="stylesheet" href="static/css/rangeslider.css"> -->
 
 </head>
 <body>
@@ -16,22 +15,41 @@
              <img src="static/img/group.svg" alt="">
          </a>
          <ul class="main_nav">
-             <li class="nav_link">
-                 Зелений тариф
+             <li class="nav_link nav_link-1 wrapper-inner-tab-backgrounds-first">
+                <div class="sim-button button19">
+                    <span>Зелений тариф</span>
+                </div>
              </li>
-             <li class="nav_link">
-                 Етапи роботи
+             <li class="nav_link nav_link-2 wrapper-inner-tab-backgrounds-first">
+                <div class="sim-button button19">
+                    <span>Етапи роботи</span>
+                </div>
              </li>
-             <li class="nav_link">
-                 Калькулятор прибутковості
+             <li class="nav_link nav_link-3 wrapper-inner-tab-backgrounds-first">
+                <div class="sim-button button19">
+                    <span>Калькулятор прибутковості</span>
+                </div>
              </li>
-             <li class="nav_link">
-                 Наші переваги
+             <li class="nav_link nav_link-4 wrapper-inner-tab-backgrounds-first">
+                <div class="sim-button button19">
+                    <span>Наші переваги</span>
+                </div>
              </li>
          </ul>
-         <div class="consultation_btn">
+         <div class="consultation_nav">
              Консультація 
          </div>
+         <div class="icon nav-icon-1 icon_none_desk">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
      </div>
      <!-- /.nav-bar -->
@@ -93,15 +111,59 @@
                  <img src="static/img/path.svg" alt="">
              </div>
             <div class="main_calculator">
-                  
-                    <div class="first_range">
-                        <input type="range" min="1" max="50" value="-10" data-rangeslider>
-                        <output></output>
+                <div class="calc_data">
+                    Тип пайової участі
+                </div>
+                <div class="radio-block">
+                    <input value="True" type="radio" id="rd1" name="actual" checked> 
+                        <label for="rd1">З прив'язкою до виробітку електроенерії</label>
+                    <input value="False" type="radio" id="rd2" name="actual"> 
+                        <label for="rd2">З гарантованою виплатою</label>
+                </div>
+                <div class="first_range-block">
+                   <div class="range_info-block">
+                       <div class="range_info">
+                        Кількість кіловат
+                       </div>
+                       <output class="first_output" style="display: inline-block">
+                        25 кВт
+                       </output>
+                   </div>
+                    <input class="first_range" type="range" value="25" step="1" min="1" max="50">
+                   
+               </div>
+               <div class="second_range-block">
+                <div class="range_info-block">
+                    <div class="range_info">
+                        Кількість років
                     </div>
-                    <div class="second_range">
-                        <input type="range" min="1" max="10" data-rangeslider>
-                        <output></output>
+                    <output class="second_output" style="display: inline-block">
+                        4
+                    </output>
+                </div>
+                    <input class="second_range" type="range" value="4" step="1" min="1" max="10">
+                </div>
+                <div class="result-block">
+                    <div class="result-prof">
+                        <div class="result_info">
+                            Вартість
+                        </div>
+                        <div class="cost_calk">
+                            $ 2 500
+                        </div>
                     </div>
+                    <div class="result-prof">
+                        <div class="result_info">
+                            Прибуток
+                        </div>
+                        <div class="profit_calk">
+                            $ 450
+                        </div>
+                    </div>
+                    <div class="consultatin_btn">
+                        Подзвонити Нам
+                     </div>
+                </div>
             </div>
          </div>
          

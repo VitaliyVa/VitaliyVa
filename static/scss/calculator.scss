@@ -26,8 +26,8 @@
     color: #302d2d;
 }
 .main_calculator {
-    max-width: 672px;
     min-height: 524px;
+    width: 60%;
     border-style: solid;
     border-width: 12px;
     border-image-source: linear-gradient(70deg, #c3d62b 12%, #74cce4 104%);
@@ -49,4 +49,261 @@
     img {
         width: 100%;
     }
+}
+
+.range_info-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 33px;
+    margin-top: 25px;
+}
+
+.range_info {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #302d2d;
+}
+.second_output, .first_output {
+    font-size: 21px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: right;
+    color: #302d2d;
+}
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked), 
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label, 
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    padding-left: 28px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #3f3b3b;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+  
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #ff4081;
+    border-bottom: 4px solid #ff4081;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    left: 3.16px;
+top: 4.2px;
+width: 14px;
+height: 14px;
+    border-radius: 100%;
+    background-color: #ff4081;
+}
+// @media (min-width: 996px) {
+//     input[type="radio"]:checked + label:after, 
+//     input[type="radio"]:not(:checked) + label:after {
+//         left: 3.16px;
+//     top: 4.2px;
+//     width: 14px;
+//     height: 14px;
+//         border-radius: 100%;
+//         background-color: #ff4081;
+//     }
+// }
+
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+input[type="checkbox"]:checked + label:before, 
+input[type="radio"]:checked + label:before {
+    border: 6.5px solid #74cce4;
+}
+
+.radio-block {
+    display: flex;
+    flex-direction: column;
+}
+.calc_data {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #302d2d;
+}
+.result-prof {
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #302d2d;
+}
+.cost_calk, .profit_calk {
+    font-size: 24px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #302d2d;
+}
+.result-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.result_info {
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #302d2d;
+    margin-bottom: 3px;
+}
+
+@media (max-width: 1190px) {
+    .arrow_calc {
+        margin-left: -265px;
+    }
+    .main_calculator {
+        width: 70%;
+    }    
+}
+@media (max-width: 985px) {
+    .arrow_calc {
+        display: none;
+    }
+    .main_calculator {
+        width: 100%;
+    }
+    .calculator_info_block {
+        max-width: unset;
+        width: 90%; 
+        margin: 0 auto;
+    }
+}
+@media (max-width: 743px) {
+    .calculator_info_block {
+        text-align: justify;
+        padding: 20px 36px;
+        
+    }
+    .result-block {
+        margin-top: 50px;
+    flex-direction: column;
+    align-items: end;
+    }
+    .result-prof {
+        margin-bottom: 10px;
+    }
+    .main_calculator {
+        padding: 20px 30px;
+    }
+}
+@media (max-width: 525px) {
+    .calculator_subtitle {
+        font-size: 18px;
+    }
+    .calculator_title {
+        font-size: 24px;
+        margin-bottom: 5px;
+        line-height: 1;
+    }
+    .calculator_info_block {
+        width: 100%;
+        padding: 20px 5px;
+
+    }
+}
+@media (max-width: 373px) {
+    .range_info {
+        font-size: 15px;
+    }
+    .second_output, .first_output {
+        font-size: 18px;
+    }
+    input[type="checkbox"]:checked+label, input[type="checkbox"]:not(:checked)+label, input[type="radio"]:checked+label, input[type="radio"]:not(:checked)+label {
+        font-size: 14px;
+
+    }
+    .main_calculator {
+        padding: 20px 15px;
+        border-width: 8px;
+
+    }
+    
 }

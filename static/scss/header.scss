@@ -72,3 +72,44 @@
     cursor: pointer;
     margin-top: 15px;
 }
+
+@media (max-width: 710px) {
+    .header-wrap_info {
+        width: 100%;
+    }
+    .header_title {
+        font-size: 25px;
+    }
+    .sub_header_title {
+        font-size: 19px;
+    }
+    .header_number {
+        font-size: 35px;
+        min-width: 95px;
+    }
+    .header-btn {
+        font-size: 14px;
+        width: 220px;
+        padding: 13px 0;
+    }    
+    .header_swiper {
+        font-size: 15px; 
+    }
+    .header {
+        height: 100vh;
+    }
+
+}
+@media (max-width: 439px) {
+    .header_title {
+        font-size: 38px;
+    }
+    .sub_header_title {
+        font-size: 27px;
+    }
+    .header_number {
+        min-width: unset;
+        display: block;
+        text-align: center;
+    }
+}

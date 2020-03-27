@@ -84,3 +84,27 @@
     /* margin-bottom: 6px; */
     line-height: 0.5;
 }
+
+@media (max-width: 1125px) {
+    .tariff_info-block {
+        flex-direction: column;
+    }
+    .tariff_video {
+        margin: 20px auto;
+    }
+}
+@media (max-width: 750px) {
+    .tariff_video {
+        width: 100%;
+    }
+}
+@media (max-width: 545px) {
+    .tariff_video {
+        height: 300px;
+    }
+}
+@media (max-width: 41px) {
+    .tariff_video {
+        height: 220px;
+    }
+}

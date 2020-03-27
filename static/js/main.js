@@ -2,29 +2,18 @@ $(document).ready(function(){
 
 
 
-
-// $('.tariff_img').on('click', function() {
-//     $('.tariff_img').addClass('tariff_img_anactive');
-//     $('.tariff_iframe').trigger( "click" );
-
-// });
-var $document = $(document);
-var selector = '[data-rangeslider]';
-
-// For ie8 support
-var textContent = ('textContent' in document) ? 'textContent' : 'innerText';
-
-// Example functionality to demonstrate a value feedback
-function valueOutput(element) {
-    var value = element.value;
-    var output = element.parentNode.getElementsByTagName('output')[0] || element.parentNode.parentNode.getElementsByTagName('output')[0];
-    output[textContent] = value;
-}
-
-$document.on('input', 'input[type="range"], ' + selector, function(e) {
-    valueOutput(e.target);
-});
-
+    const icons = document.querySelectorAll('.icon');
+    icons.forEach (icon => {  
+      icon.addEventListener('click', (event) => {
+        icon.classList.toggle("open");
+      });
+    });
+    
+    $('.icon_none_desk').on('click', function() {
+        $('.main_nav').toggleClass('main_nav_active');
+        $('.nav_link').toggleClass('nav_link_active');
+        
+    });
     new WOW().init();
 
 
@@ -61,5 +50,7 @@ $document.on('input', 'input[type="range"], ' + selector, function(e) {
         }
     }, 10);
 
+
+    
 
 });
