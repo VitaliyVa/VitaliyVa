@@ -1,0 +1,86 @@
+.tariff {
+    padding-bottom: 150px;
+}
+.tariff_video {
+    position: relative;
+    width: 680px;
+    height: 400px;
+    margin-top: 20px;
+}
+.absolute_tariff_effect {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    z-index: -1;
+    bottom: -78px;
+    right: -70px;
+}
+.tariff_iframe {
+    z-index: 2;
+}
+.tariff_img {
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+    width: 100%;
+    transition: all .2s;
+}
+.tariff_img_anactive {
+    opacity: 0;
+}
+.tariff_title {
+    font-size: 34px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #302d2d;
+    max-width: 600px;
+    margin-top: 80px;
+}
+.consultatin_btn {
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+        width: 181px;
+        text-align: center;
+        padding: 12.5px 0;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: #c3d72b;
+        cursor: pointer;
+}
+.tariff_info-block {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+.tariff_profile {
+}
+.tarif_subtitle {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #302d2d;
+    max-width: 450px;
+    margin-right: 20px;
+}
+.down_effect {
+    border-bottom: 6px solid #ccdd47;
+    padding-bottom: -7px;
+    display: inline-block;
+    /* margin-bottom: 6px; */
+    line-height: 0.5;
+}

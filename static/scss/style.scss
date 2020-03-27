@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900&display=swap');
+
+@import 'rangeslider';
+@import 'navigation';
+@import 'header';
+@import 'tariff';
+@import 'calculator';
+
+
+
+
+
+
+
+
+
+body {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	// font-family: 'OpenSans-Regular', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+	
+}
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+
+}
+.main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.load_spin {
+    display: none;
+  }
+  .error {
+    font-size: 14px;
+    color: #B1413F;
+    padding-top: 5px;
+    padding-left: 5px;
+  
+  }
+  .form_true_img {
+    width: 75px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 11px;
+  }
+  .footer__sub {
+    text-align: center;
+  }
+  .load_spin_active {
+    position: fixed;
+    z-index: 10000000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#4d5359, 0.7);
+    display: block !important;
+    
+    img {
+      width: 50px;
+      display: block;
+      margin: 20% auto;
+      height: auto;
+    }
+    
+  }

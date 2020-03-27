@@ -1,0 +1,59 @@
+img {
+    width: 100%;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+.nav-bar {
+    position: fixed;
+    background-color: #fff;
+    width: 1443px;
+    z-index: 9999;
+    margin-left: -2px;
+   .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+   }
+   padding: 7px 0;
+}
+.main_nav {
+    display: flex;
+    align-items: center;
+}
+.nav_link {
+    list-style: none;
+    margin: 0px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #302d2d;
+    cursor: pointer;
+}
+.consultation_btn {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #242321;
+    width: 186px;
+    border-radius: 5px;
+    text-align: center;
+    border: solid 1px #c3d72b;
+    padding: 11px 0;
+}
+@media (max-width: 1443px) {
+    .nav-bar {
+        width: 100%;
+        margin: 0;
+    }
+}
