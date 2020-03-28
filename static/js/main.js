@@ -1,5 +1,72 @@
 $(document).ready(function(){
 
+
+
+
+    $(".scroll_all").on('click', function () {
+        var elementClick = $(this).attr("href");
+        // console.log(elementClick);
+      
+        var destination = $(elementClick).offset().top;
+        var destContacts = (destination - 100)
+        $('html, body').animate({ scrollTop: destContacts }, 600);
+        console.log(destContacts);
+        return false;
+        
+ 
+    });
+
+
+
+    $('.consultation_js').fancybox({
+        touch: false,
+        scrolling: 'hidden',
+       
+    });
+    
+
+
+    var check_box = "З прив'язкою до виробітку електроенерії";
+    var first_output = $('.first_output');
+    var second_output = $('.second_output');
+    var cost_calk = $('.cost_calk');
+    var profit_calk = $('.profit_calk');
+
+    var hidden_input_1 = $('.input_check_box');
+    var hidden_input_2 = $('.input_first_output');
+    var hidden_input_3 = $('.input_second_output');
+    var hidden_input_4 = $('.input_cost_calk');
+    var hidden_input_5 = $('.input_profit_calk');
+
+    hidden_input_1.val(check_box);
+    hidden_input_2.val(first_output.text());
+    hidden_input_3.val(second_output.text());
+    hidden_input_4.val(cost_calk.text());
+    hidden_input_5.val(profit_calk.text());
+
+    $('.lab-1').on('click', function() {
+        check_box = "З прив'язкою до виробітку електроенерії";
+    });
+    $('.lab-2').on('click', function() {
+        check_box = "З гарантованою виплатою";
+    });
+
+    $('.calc_btn').on('click', function() {
+
+        hidden_input_1.val(check_box);
+        hidden_input_2.val(first_output.text());
+        hidden_input_3.val(second_output.text());
+        hidden_input_4.val(cost_calk.text());
+        hidden_input_5.val(profit_calk.text());
+
+
+    });
+   
+
+    
+
+
+
     $('.mobile').mask("+38(999) 99 99 999");
 
 
@@ -103,12 +170,27 @@ $(document).mouseup(function(e) {
     });
     
     $('.icon_none_desk').on('click', function() {
+
+        if ($(this).hasClass('open')) {
+            $("html,body").css("overflow", "hidden");
+          } else {
+              $("html,body").css("overflow", "visible");
+        
+          }
+
         $('.main_nav').toggleClass('main_nav_active');
         $('.nav_link').toggleClass('nav_link_active');
         
     });
    
-
+    $('.nav_link').on('click', function() {
+        console.log(1222);
+        $("html,body").css("overflow", "visible");
+        $('.main_nav').removeClass('main_nav_active');
+        $('.nav_link').removeClass('nav_link_active');
+        $('.icon_none_desk').removeClass('open');
+        
+    });
 
     var customs_cleared_price = $('.header_number');
     var price_text = 0;

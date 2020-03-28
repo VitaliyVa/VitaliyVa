@@ -12,6 +12,8 @@ $(function() {
 //  **/
 function Onload() {
     valide_form('#last-form_cons', '.inp-vak-wrap', true);
+    valide_form('#form_calculator', '.inp-vak-wrap', true);
+    valide_form('#form_cons', '.inp-vak-wrap', true);
 }
 function location_leng() {
     return location.pathname.split('/')[1];
