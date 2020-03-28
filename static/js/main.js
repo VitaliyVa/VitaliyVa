@@ -1,5 +1,98 @@
 $(document).ready(function(){
 
+    $('.mobile').mask("+38(999) 99 99 999");
+
+
+    var inputHasFocus = $('.input_focus');
+    inputHasFocus.on('focus', function() {
+      let focusFinder = $(this).parents('.inp-vak-wrap').find('.label__style');
+      focusFinder.addClass('label__style_active');
+    });
+    
+    inputHasFocus.on('blur', function() {
+      if ($(this).val().length < 1 || $(this).val() == '+38(___) __ __ ___') {
+          let blurFinder =$(this).parents('.inp-vak-wrap').find('.label__style');
+          blurFinder.removeClass('label__style_active');
+      }
+      
+    });
+
+
+
+
+
+$('.etaps-prof').on("click", function() {
+    var ep = $(this).parents(".prof-wrap").find(".etaps-prichka");
+    var pe = $(this).parents(".prof-wrap").find(".peshka");
+    var cl = $(this).find(".close-etaps");
+    var te = $(this).find(".text-etaps");
+
+
+    $('.peshka').removeClass('peshka_active');
+    $('.etaps-prichka').removeClass('etaps-prichka_active');
+    $(ep).addClass('etaps-prichka_active');
+    $(pe).addClass('peshka_active');
+    
+
+    if ($(this).hasClass('close-etaps_active')) {
+          $(this).removeClass('close-etaps_active');
+          $('.peshka').removeClass('peshka_active');
+          $('.etaps-prichka').removeClass('etaps-prichka_active');
+    } else {
+        console.log('noClass');
+        $('.etaps-prof').removeClass('close-etaps_active');
+        $(this).addClass('close-etaps_active');
+    }
+
+
+  
+
+     
+    });
+
+
+
+$(".close-etaps").on("click", function(){
+    $('.peshka').removeClass('peshka_active');
+    $('.etaps-prichka').removeClass('etaps-prichka_active');
+    $('.etaps-prof').removeClass('close-etaps_active');
+});
+$(document).mouseup(function(e) {
+    var select = $(e.target).parents('.prof-wrap'); // тут указываем класс элемента
+    var closs = $(e.target).parents('.prof-wrap').find('.close-etaps'); // тут указываем класс элемента
+ 
+    if (select.length > 0 || closs.length > 0) {} else {
+      $('.peshka').removeClass('peshka_active');
+      $('.etaps-prichka').removeClass('etaps-prichka_active');
+       $('.etaps-prof').removeClass('close-etaps_active');
+    }
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+    var wow1 = new WOW(
+        {
+          boxClass:     'line_animated',      // animated element css class (default is wow)
+          animateClass: 'test_line', // animation css class (default is animated)
+          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          mobile:       true,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          scrollContainer: null,    // optional scroll container selector, otherwise use window,
+          resetAnimation: true,     // reset animation on end (default is true)
+        }
+      );
+      wow1.init();
+
+
 
 
     const icons = document.querySelectorAll('.icon');
@@ -14,7 +107,7 @@ $(document).ready(function(){
         $('.nav_link').toggleClass('nav_link_active');
         
     });
-    new WOW().init();
+   
 
 
     var customs_cleared_price = $('.header_number');

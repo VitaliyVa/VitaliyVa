@@ -5,6 +5,9 @@
 @import 'header';
 @import 'tariff';
 @import 'calculator';
+@import 'etaps';
+@import 'preferens';
+@import 'footer';
 
 
 
@@ -58,21 +61,6 @@ body {
   .footer__sub {
     text-align: center;
   }
-  .load_spin_active {
-    position: fixed;
-    z-index: 10000000;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(#4d5359, 0.7);
-    display: block !important;
-    
-    img {
-      width: 50px;
-      display: block;
-      margin: 20% auto;
-      height: auto;
-    }
-    
-  }
+ 
 
 
