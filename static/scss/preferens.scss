@@ -6,7 +6,7 @@
 .pref-absolute-1 {
     position: absolute;
     top: 180px;
-    right: 0;
+    right: -50px;
     width: 430px;
     height: 110px;
 }
@@ -47,6 +47,7 @@
     margin-top: 20px;
     margin-right: 20px;
     text-align: start;
+    cursor: default;
 }
 .pref-img {
     min-height: 50px;

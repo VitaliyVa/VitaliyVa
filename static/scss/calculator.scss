@@ -2,6 +2,8 @@
     padding-bottom: 150px;
 }
 .calculator_info_block {
+    position: relative;
+    z-index: 1;
     max-width: 800px;
     min-height: 505px;
     background-color: #f9f9f9;
@@ -34,6 +36,8 @@
     border-image-slice: 1;
     background-color: #ffffff;
     padding: 60px 70px;
+    position: relative;
+    z-index: 2;
 }
 .calculator_wrap {
     display: flex;
@@ -44,6 +48,8 @@
 
 }
 .arrow_calc {
+    position: relative;
+    z-index: 2;
     margin-left: -115px;
 
     img {
