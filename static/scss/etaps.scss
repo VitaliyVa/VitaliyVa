@@ -244,6 +244,9 @@
     }
 } 
 @media (max-width: 980px) {
+    .absolute_effect_for_etaps {
+        display: none;
+    }
     .line_animated {
         margin-left: -660px;
     }
@@ -270,8 +273,9 @@
     
     }
     .etaps_info-6 {
-        top: 55px;
+        top: 51px;
     }
+    
 }
 @media (max-width: 717px) {
     .last_etaps-wrap {
@@ -308,7 +312,7 @@
         max-width: unset;
         width: 95%;
         left: 55px;
-        top: 32px;
+        top: 33px;
         font-size: 20px;
         padding-right: 10px;
     }

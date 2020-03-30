@@ -291,7 +291,10 @@ input[type="radio"]:checked + label:before {
         padding: 20px 36px;
         
     }
-   
+    .calculator_title {
+        padding: 0 15px 15px 15px;
+
+    }
     .result-prof {
         margin-bottom: 10px;
     }
