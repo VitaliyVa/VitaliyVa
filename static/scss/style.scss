@@ -67,3 +67,18 @@ body {
  
 
 
+  @-webkit-keyframes autofill {
+    to {
+      color: #fff;
+      background: transparent;
+    }
+  }
+  
+  input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  }
+
+  .rangeslider__fill, .rangeslider__handle {
+    transition: all 0.2s ease 0s;
+  }

@@ -49,15 +49,40 @@ $(document).ready(function(){
     hidden_input_3.val(second_output.text());
     hidden_input_4.val(cost_calk.text());
     hidden_input_5.val(profit_calk.text());
+    var first_range_block = $('.first_range-block')[0];
+    var first_ranges = $('.first_range');
 
     $('.lab-1').on('click', function() {
         check_box = "З прив'язкою до виробітку електроенерії";
+
+      $('#main_calculator_1').removeClass('main_calculator_hidden');
+      $('#main_calculator_2').addClass('main_calculator_hidden');
+
+      $('.radio-block').addClass('version_1');
+      $('.radio-block').removeClass('version_2');
+
+
+
     });
     $('.lab-2').on('click', function() {
         check_box = "З гарантованою виплатою";
+        
+        $('#main_calculator_2').removeClass('main_calculator_hidden');
+        $('#main_calculator_1').addClass('main_calculator_hidden');
+
+
+        $('.radio-block').removeClass('version_1');
+        $('.radio-block').addClass('version_2');
+
     });
 
+
+    
+   
+
     $('.calc_btn').on('click', function() {
+    var path_for_input = $(this).parents('.result-block').parents('.main_calculator');
+    console.log('path_for_input: ', path_for_input);
 
         hidden_input_1.val(check_box);
         hidden_input_2.val(first_output.text());
@@ -159,7 +184,7 @@ $(document).mouseup(function(e) {
         {
           boxClass:     'line_animated',      // animated element css class (default is wow)
           animateClass: 'test_line', // animation css class (default is animated)
-          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
@@ -172,7 +197,7 @@ $(document).mouseup(function(e) {
         {
           boxClass:     'calc_first_anim',      // animated element css class (default is wow)
           animateClass: 'flipInY_1', // animation css class (default is animated)
-          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
@@ -185,7 +210,7 @@ $(document).mouseup(function(e) {
         {
           boxClass:     'calc_first_anim_2',      // animated element css class (default is wow)
           animateClass: 'flipInY_2', // animation css class (default is animated)
-          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
@@ -198,7 +223,7 @@ $(document).mouseup(function(e) {
         {
           boxClass:     'prof-wrap',      // animated element css class (default is wow)
           animateClass: 'rotateInDownLeft', // animation css class (default is animated)
-          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
@@ -211,7 +236,7 @@ $(document).mouseup(function(e) {
         {
           boxClass:     'etaps_prof',      // animated element css class (default is wow)
           animateClass: 'bounceInDown', // animation css class (default is animated)
-          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
@@ -224,7 +249,7 @@ $(document).mouseup(function(e) {
         {
           boxClass:     'last_etaps-block',      // animated element css class (default is wow)
           animateClass: 'bounceInRight', // animation css class (default is animated)
-          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
@@ -237,7 +262,7 @@ $(document).mouseup(function(e) {
         {
           boxClass:     'pref-absolute-1',      // animated element css class (default is wow)
           animateClass: 'rubberBand', // animation css class (default is animated)
-          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
@@ -250,7 +275,7 @@ $(document).mouseup(function(e) {
         {
           boxClass:     'form_animate',      // animated element css class (default is wow)
           animateClass: 'zoomInLeft', // animation css class (default is animated)
-          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
@@ -263,7 +288,7 @@ $(document).mouseup(function(e) {
         {
           boxClass:     'footer-info-block',      // animated element css class (default is wow)
           animateClass: 'zoomInRight', // animation css class (default is animated)
-          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
@@ -277,7 +302,7 @@ $(document).mouseup(function(e) {
         {
           boxClass:     'tariff_video',      // animated element css class (default is wow)
           animateClass: 'bounceInRight', // animation css class (default is animated)
-          offset:       110,          // distance to the element when triggering the animation (default is 0)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
           scrollContainer: null,    // optional scroll container selector, otherwise use window,

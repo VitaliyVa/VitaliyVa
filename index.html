@@ -125,11 +125,11 @@
              <div class="arrow_calc">
                  <img data-src="static/img/path.svg" alt="">
              </div>
-            <div class="main_calculator">
+            <div id="main_calculator_1" class="main_calculator">
                 <div class="calc_data">
                     Тип пайової участі
                 </div>
-                <div class="radio-block">
+                <div class="radio-block version_1">
                     <input value="True" type="radio" id="rd1" name="actual" checked> 
                         <label class="lab-1" for="rd1">З прив'язкою до виробітку електроенерії</label>
                     <input value="False" type="radio" id="rd2" name="actual"> 
@@ -137,7 +137,7 @@
                 </div>
                 <div class="first_range-block">
                    <div class="range_info-block">
-                       <div class="range_info">
+                       <div class="range_info range_info_1">
                         Кількість кіловат
                        </div>
                        <output class="first_output" style="display: inline-block">
@@ -163,22 +163,73 @@
                         <div class="result_info">
                             Вартість
                         </div>
-                        <div class="cost_calk">€ 28000</div>
+                        <div class="cost_calk">€ 23200</div>
                     </div>
                     <div class="result-prof">
                         <div class="result_info">
                             Прибуток
                         </div>
-                        <div class="profit_calk">
-                            € 17500
-                        </div>
+                        <div class="profit_calk">€ 17500</div>
                     </div>
                     <div class="consultatin_btn calc_btn consultation_js hvr-shutter-in-vertical" data-src='#form_calculator'>
                         Подзвонити Нам
                      </div>
                 </div>
             </div>
+            <div id="main_calculator_2" class="main_calculator main_calculator_hidden">
+                <div class="calc_data">
+                    Тип пайової участі
+                </div>
+                <div class="radio-block version_1">
+                    <input value="True" type="radio" id="rd1" name="actual2"> 
+                        <label class="lab-1" for="rd1">З прив'язкою до виробітку електроенерії</label>
+                    <input value="False" type="radio" id="rd2" name="actual2" checked> 
+                        <label class="lab-2" for="rd2">З гарантованою виплатою</label>
+                </div>
+                <div class="first_range-block">
+                   <div class="range_info-block">
+                       <div class="range_info range_info_1">
+                        Кількість станцій
+                       </div>
+                       <output class="third_output" style="display: inline-block">
+                        25 кВт
+                       </output>
+                   </div>
+                    <input class="third_range" type="range" value="25" step="1" min="1" max="50">
+                   
+               </div>
+               <div class="second_range-block">
+                <div class="range_info-block">
+                    <div class="range_info">
+                        Кількість років
+                    </div>
+                    <output class="four_output" style="display: inline-block">
+                        4
+                    </output>
+                </div>
+                    <input class="four_range" type="range" value="4" step="1" min="1" max="10">
+                </div>
+                <div class="result-block">
+                    <div class="result-prof">
+                        <div class="result_info">
+                            Вартість
+                        </div>
+                        <div class="cost_calk_2">€ 23200</div>
+                    </div>
+                    <div class="result-prof">
+                        <div class="result_info">
+                            Прибуток
+                        </div>
+                        <div class="profit_calk_2">€ 17500</div>
+                    </div>
+                    <div class="consultatin_btn calc_btn consultation_js hvr-shutter-in-vertical" data-src='#form_calculator'>
+                        Подзвонити Нам
+                     </div>
+                </div>
+            </div>
+           
          </div>
+         
          
      </div>
      <!-- /.container -->

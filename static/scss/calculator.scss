@@ -28,6 +28,8 @@
     color: #302d2d;
 }
 .main_calculator {
+    position: relative;
+    right: 0;
     min-height: 524px;
     width: 60%;
     border-style: solid;
@@ -39,6 +41,10 @@
     position: relative;
     z-index: 2;
 }
+
+.main_calculator_hidden {
+    display: none;
+}
 .calculator_wrap {
     display: flex;
     margin-top: -200px;
@@ -47,6 +53,7 @@
     justify-content: space-between;
 
 }
+
 .arrow_calc {
     position: relative;
     z-index: 2;
@@ -74,7 +81,7 @@
     letter-spacing: normal;
     color: #302d2d;
 }
-.second_output, .first_output {
+.second_output, .first_output, .third_output, .four_output {
     font-size: 21px;
     font-weight: 900;
     font-stretch: normal;
@@ -216,7 +223,7 @@ input[type="radio"]:checked + label:before {
     letter-spacing: normal;
     color: #302d2d;
 }
-.cost_calk, .profit_calk {
+.cost_calk, .profit_calk, .cost_calk_2, .profit_calk_2 {
     font-size: 24px;
     font-weight: 800;
     font-stretch: normal;
@@ -225,6 +232,12 @@ input[type="radio"]:checked + label:before {
     letter-spacing: normal;
     color: #302d2d;
 }
+#main_calculator_2 {
+   .first_range-block {
+     
+   }
+}
+
 .result-block {
     display: flex;
     align-items: center;
@@ -299,7 +312,7 @@ input[type="radio"]:checked + label:before {
     .range_info {
         font-size: 15px;
     }
-    .second_output, .first_output {
+    .second_output, .first_output, .third_output, .four_output {
         font-size: 18px;
     }
     input[type="checkbox"]:checked+label, input[type="checkbox"]:not(:checked)+label, input[type="radio"]:checked+label, input[type="radio"]:not(:checked)+label {
