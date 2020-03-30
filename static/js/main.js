@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 
 
-
+  
 
     $.extend($.lazyLoadXT, {
         edgeY:  250,
