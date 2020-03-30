@@ -67,18 +67,67 @@ body {
  
 
 
-  @-webkit-keyframes autofill {
-    to {
-      color: #fff;
-      background: transparent;
-    }
-  }
+
   
-  input:-webkit-autofill {
-    -webkit-animation-name: autofill;
-    -webkit-animation-fill-mode: both;
-  }
 
   .rangeslider__fill, .rangeslider__handle {
     transition: all 0.2s ease 0s;
   }
+
+  #last-form_cons {
+
+    input:-webkit-autofill {
+      -webkit-animation-name: autofill;
+      -webkit-animation-fill-mode: both;
+    }
+  
+    @-webkit-keyframes autofill {
+      to {
+        color: #fff;
+        background: transparent;
+      }
+    }
+
+  }
+
+
+.modal_form {
+
+  input:-webkit-autofill {
+    -webkit-animation-name: autofill_2;
+    -webkit-animation-fill-mode: both;
+  }
+
+
+  @-webkit-keyframes autofill_2 {
+    to {
+        color: #242321;
+
+      background: transparent;
+    }
+  }
+ 
+}
+
+
+.consultation_js, .submit_cons {
+
+  transition: all .2s;
+
+  &:hover {
+    background-color: #b8cc1c;
+  }
+}
+
+.consultation_nav {
+  &:hover {
+    border: 1px solid #b8cc1c;
+  }
+}
+
+
+@media (max-width: 893px) {
+  h3 {
+    font-size: 24px !important;
+  }
+}

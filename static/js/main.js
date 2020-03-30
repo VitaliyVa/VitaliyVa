@@ -80,6 +80,7 @@ $(document).ready(function(){
 
     });
 
+    
 
     
    
@@ -205,10 +206,24 @@ $(document).mouseup(function(e) {
       );
       wow1.init();
 
+      var wow_calk_arrow = new WOW(
+        {
+          boxClass:     'arrow_calc',      // animated element css class (default is wow)
+          animateClass: 'fadeInLeft', // animation css class (default is animated)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
+          mobile:       true,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          scrollContainer: null,    // optional scroll container selector, otherwise use window,
+          resetAnimation: true,     // reset animation on end (default is true)
+        }
+      );
+      wow_calk_arrow.init();
+      
+
       var wow2 = new WOW(
         {
           boxClass:     'calc_first_anim',      // animated element css class (default is wow)
-          animateClass: 'flipInY_1', // animation css class (default is animated)
+          animateClass: 'fadeInUp', // animation css class (default is animated)
           offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
@@ -221,7 +236,7 @@ $(document).mouseup(function(e) {
       var wow3 = new WOW(
         {
           boxClass:     'calc_first_anim_2',      // animated element css class (default is wow)
-          animateClass: 'flipInY_2', // animation css class (default is animated)
+          animateClass: 'fadeInUp', // animation css class (default is animated)
           offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
@@ -234,7 +249,7 @@ $(document).mouseup(function(e) {
       var wow_question = new WOW(
         {
           boxClass:     'prof-wrap',      // animated element css class (default is wow)
-          animateClass: 'rotateInDownLeft', // animation css class (default is animated)
+          animateClass: 'fadeInUp', // animation css class (default is animated)
           offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
@@ -247,7 +262,7 @@ $(document).mouseup(function(e) {
       var wow_etaps = new WOW(
         {
           boxClass:     'etaps_prof',      // animated element css class (default is wow)
-          animateClass: 'bounceInDown', // animation css class (default is animated)
+          animateClass: 'fadeInDown', // animation css class (default is animated)
           offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
@@ -260,7 +275,7 @@ $(document).mouseup(function(e) {
       var wow_etaps_sum = new WOW(
         {
           boxClass:     'last_etaps-block',      // animated element css class (default is wow)
-          animateClass: 'bounceInRight', // animation css class (default is animated)
+          animateClass: 'fadeInUp', // animation css class (default is animated)
           offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
@@ -273,7 +288,20 @@ $(document).mouseup(function(e) {
       var wow_pref_arrow = new WOW(
         {
           boxClass:     'pref-absolute-1',      // animated element css class (default is wow)
-          animateClass: 'rubberBand', // animation css class (default is animated)
+          animateClass: 'fadeInRight', // animation css class (default is animated)
+          offset:       85,          // distance to the element when triggering the animation (default is 0)
+          mobile:       true,       // trigger animations on mobile devices (default is true)
+          live:         true,       // act on asynchronously loaded content (default is true)
+          scrollContainer: null,    // optional scroll container selector, otherwise use window,
+          resetAnimation: true,     // reset animation on end (default is true)
+        }
+      );
+      wow_pref_arrow.init();
+
+      var wow_pref_arrow = new WOW(
+        {
+          boxClass:     'pref-absolute-2',      // animated element css class (default is wow)
+          animateClass: 'fadeInUp', // animation css class (default is animated)
           offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
@@ -286,7 +314,7 @@ $(document).mouseup(function(e) {
       var wow_footer_form_1 = new WOW(
         {
           boxClass:     'form_animate',      // animated element css class (default is wow)
-          animateClass: 'zoomInLeft', // animation css class (default is animated)
+          animateClass: 'fadeInUp', // animation css class (default is animated)
           offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
@@ -299,7 +327,7 @@ $(document).mouseup(function(e) {
       var wow_footer_form_2 = new WOW(
         {
           boxClass:     'footer-info-block',      // animated element css class (default is wow)
-          animateClass: 'zoomInRight', // animation css class (default is animated)
+          animateClass: 'fadeInUp', // animation css class (default is animated)
           offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
@@ -313,7 +341,7 @@ $(document).mouseup(function(e) {
       var wow_video = new WOW(
         {
           boxClass:     'tariff_video',      // animated element css class (default is wow)
-          animateClass: 'bounceInRight', // animation css class (default is animated)
+          animateClass: 'fadeInUp', // animation css class (default is animated)
           offset:       85,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)

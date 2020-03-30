@@ -48,6 +48,8 @@
 .calculator_wrap {
     display: flex;
     margin-top: -200px;
+    position: relative;
+    z-index: 2;
 
     align-items: center;
     justify-content: space-between;
@@ -222,6 +224,7 @@ input[type="radio"]:checked + label:before {
     line-height: 1.33;
     letter-spacing: normal;
     color: #302d2d;
+    margin-right: 20px;
 }
 .cost_calk, .profit_calk, .cost_calk_2, .profit_calk_2 {
     font-size: 24px;
@@ -254,6 +257,13 @@ input[type="radio"]:checked + label:before {
     margin-bottom: 3px;
 }
 
+.res-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
 @media (max-width: 1190px) {
     .arrow_calc {
         margin-left: -265px;
@@ -281,16 +291,26 @@ input[type="radio"]:checked + label:before {
         padding: 20px 36px;
         
     }
-    .result-block {
-        margin-top: 50px;
-    flex-direction: column;
-    align-items: end;
-    }
+   
     .result-prof {
         margin-bottom: 10px;
     }
     .main_calculator {
         padding: 20px 30px;
+    }
+}
+@media (max-width: 570px) {
+    .result-block {
+        margin-top: 50px;
+    flex-direction: column;
+    align-items: end;
+    }
+    .res-wrap {
+        justify-content: unset;
+        width: 100%;
+    }
+    .result-prof {
+        margin-right: 30px;
     }
 }
 @media (max-width: 525px) {
@@ -323,6 +343,12 @@ input[type="radio"]:checked + label:before {
         padding: 20px 15px;
         border-width: 8px;
 
+    }
+    .result-prof {
+        margin-right: 25px;
+    }
+    .cost_calk, .profit_calk, .cost_calk_2, .profit_calk_2 {
+        font-size: 22px; 
     }
     
 }
