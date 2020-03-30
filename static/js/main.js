@@ -35,8 +35,12 @@ $(document).ready(function(){
     var check_box = "З прив'язкою до виробітку електроенерії";
     var first_output = $('.first_output');
     var second_output = $('.second_output');
+    var third_output = $('.third_output');
+    var four_output = $('.four_output');
     var cost_calk = $('.cost_calk');
+    var cost_calk_2 = $('.cost_calk_2');
     var profit_calk = $('.profit_calk');
+    var profit_calk_2 = $('.profit_calk_2');
 
     var hidden_input_1 = $('.input_check_box');
     var hidden_input_2 = $('.input_first_output');
@@ -80,9 +84,7 @@ $(document).ready(function(){
     
    
 
-    $('.calc_btn').on('click', function() {
-    var path_for_input = $(this).parents('.result-block').parents('.main_calculator');
-    console.log('path_for_input: ', path_for_input);
+    $('.calc_btn_1').on('click', function() {
 
         hidden_input_1.val(check_box);
         hidden_input_2.val(first_output.text());
@@ -92,7 +94,17 @@ $(document).ready(function(){
 
 
     });
-   
+
+    $('.calc_btn_2').on('click', function() {
+
+      hidden_input_1.val(check_box);
+      hidden_input_2.val(third_output.text());
+      hidden_input_3.val(four_output.text());
+      hidden_input_4.val(cost_calk_2.text());
+      hidden_input_5.val(profit_calk_2.text());
+
+
+  });
 
     
 
